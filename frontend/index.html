@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RecruitAI Prompt Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>RecruitAI Prompt Generator</h1>
+    <form id="uploadForm">
+      <label for="flowFile">Upload Flow (.xml or .png/.jpg):</label>
+      <input type="file" id="flowFile" name="flow_file" required />
+
+      <label for="exampleFile">Upload Example Script (.txt):</label>
+      <input type="file" id="exampleFile" name="example_file" required />
+
+      <label for="jobDescFile">Upload Job Description (.json):</label>
+      <input type="file" id="jobDescFile" name="job_desc_file" required />
+
+      <label for="jobDetailFile">Upload Job Details (.json):</label>
+      <input type="file" id="jobDetailFile" name="job_detail_file" required />
+
+      <button type="submit">Generate Prompt</button>
+    </form>
+
+    <div id="resultSection" style="display:none;">
+      <h3>✅ Prompt Generated</h3>
+      <a id="downloadLink" href="#" download>Click to Download Prompt</a>
+    </div>
+
+    <div id="loader" style="display:none;">Processing... Please wait ⏳</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
