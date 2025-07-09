@@ -1,0 +1,16 @@
+<flow>
+    <step>Greet the candidate</step>
+    <step>Ask if it's a good time to talk</step>
+    <step>Confirm job application for FedEx driver</step>
+    <step>Ask about driving experience</step>
+    <step>Ask if they’ve worked for FedEx before</step>
+    <step>If yes, collect FedEx ID and contractor info</step>
+    <step>Ask about DOT medical card</step>
+    <step>Confirm age &gt; 21</step>
+    <step>Ask about reliable transportation</step>
+    <step>Ask about current job / reason for change</step>
+    <step>Ask if they can pass drug, background, physical</step>
+    <step>Walk through job description</step>
+    <step>Ask if they are interested to proceed</step>
+    <step>Explain next steps</step>
+</flow>
