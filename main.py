@@ -8,19 +8,23 @@ import google.generativeai as genai
 from parsers.flow_parser import parse_flow
 from parsers.utils import extract_script
 
+# Load API key from .env
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+# Initialize FastAPI app
 app = FastAPI()
 
+# ✅ CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # ✅ In production, replace with your frontend URL (e.g. https://yourfrontend.onrender.com)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# Save uploaded file
 def save_file(upload: UploadFile):
     path = f"uploads/{upload.filename}"
     os.makedirs("uploads", exist_ok=True)
@@ -28,6 +32,7 @@ def save_file(upload: UploadFile):
         shutil.copyfileobj(upload.file, f)
     return path
 
+# Main API Route
 @app.post("/generate/")
 async def generate(
     flow_file: UploadFile = File(...),
@@ -77,16 +82,16 @@ async def generate(
         "script": example_script
     }
 
-    # Render Jinja prompt
+    # Load and render system prompt template
     with open("prompt_template.txt") as f:
         prompt_template = Template(f.read())
     rendered_prompt = prompt_template.render(**job_data)
 
-    # Send to Gemini
-    model = genai.GenerativeModel("gemini-pro")
+    # Generate content using Gemini
+    model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(rendered_prompt)
 
-    # Save final result
+    # Save output
     os.makedirs("outputs", exist_ok=True)
     out_path = "outputs/final_prompt.txt"
     with open(out_path, "w") as f:

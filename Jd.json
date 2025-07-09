@@ -1,0 +1,67 @@
+{
+  "jobId": "34",
+  "jobTitle": "Seasonal L20 Driver",
+  "category": "FedEx P\u0026D Full Service",
+  "categoryId": "1",
+  "questionData": [
+    {
+      "questionId": 9,
+      "question": "Do you Have any prior Felony or Criminal Charges"
+    },
+    {
+      "questionId": 10,
+      "question": "Have you worked for Fedex Before?"
+    },
+    {
+      "questionId": 11,
+      "question": "If worked for Fedex then what is your Fedex ID, Contractor Name and Terminal address"
+    },
+    {
+      "questionId": 12,
+      "question": "Do you have an existing DOT Medical card ( MEC) ?"
+    },
+    {
+      "questionId": 24,
+      "question": "Are you Over 21 years?"
+    },
+    {
+      "questionId": 25,
+      "question": "Do you have reliable transportation to get to the job everyday?"
+    },
+    {
+      "questionId": 36,
+      "question": "Where are you currently working and why are you looking to change?"
+    },
+    {
+      "questionId": 37,
+      "question": "Will you be able to Pass a Background verification check, Drug Test and a Physical test?"
+    },
+    {
+      "questionId": 38,
+      "question": "If Fedex Experience, explore track record with Fedex - any accidents?  Fired by other contractors? History of complaints/violations? Attendance record with other contractors, such as number of call outs with contractor in a year."
+    }
+  ],
+  "jobRequire": [
+    {
+      "jobRequireId": 1,
+      "jobRequireName": "Drug Screening"
+    },
+    {
+      "jobRequireId": 2,
+      "jobRequireName": "DOT Medical Card"
+    },
+    {
+      "jobRequireId": 3,
+      "jobRequireName": "Road test"
+    },
+    {
+      "jobRequireId": 17,
+      "jobRequireName": "Video Interview"
+    },
+    {
+      "jobRequireId": 18,
+      "jobRequireName": "Quals Cert"
+    }
+  ]
+}
+

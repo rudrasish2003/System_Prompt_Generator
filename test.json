@@ -1,0 +1,64 @@
+{
+  "recruitingContact": {
+    "jobCategory": "FedEx P\u0026D Full Service",
+    "jobType": [
+      {
+        "jobId": 6,
+        "jobName": "Non CDL/L20",
+        "jobDescription": "html data"
+      },
+      {
+        "jobId": 20,
+        "jobName": "Weekend L20 Driver",
+        "jobDescription": null
+      }
+    ],
+    "company": "Bossert Logistics Inc.",
+    "clientName": "Bossert Logistics Inc.",
+    "name": "Bossert Logistics Inc.",
+    "clientId": "187",
+    "timeZone": "Central Daylight",
+    "terminalAddress": "450 Falling Creek Rd. Spartanburg, SC. 29301",
+    "howManyRoutes": "30"
+  },
+  "additionalInformation": {
+    "Driver Information": {
+      "Minimum Required Experience for Drivers": "1-3 Years (At least 1-year verifiable commercial driving experience in large trucks.)",
+      "Types of Routes": "15% Rural, 85% Suburban with residential and business",
+      "Areas your CSA Covers": "Spartanburg, Boiling Springs, Inman, Campobello and Landrum, SC.",
+      "Fixed Route or Floater ?": "Fixed",
+      "Non-CDL Drivers needed": "10/Month",
+      "L-10 Drivers needed": "",
+      "Alternate Vehicle Drivers needed": "",
+      "Additional Information": "**  No Female Drivers **. Drivers between 25-45 years to be chosen."
+    },
+    "Driver Schedule": {
+      "Start time for Driver": "08:00 AM",
+      "Typical hours run each day": "7-8 Hours",
+      "Typical Miles Driven each day": "40-75 Miles",
+      "Work Schedules": "5 Days with a Weekend, Weekend Drivers",
+      "Additional Information": ""
+    },
+    "Benefits": {
+      "Pay Structure": "Flat daily Pay",
+      "How much do you Pay your drivers ?": "Starting pay 140/day - 150/day depending on experience",
+      "Training": "1 Week same pay",
+      "Incentives": "",
+      "Payday": "Friday",
+      "Vacation/ Sick Time": "",
+      "Other Benefits": "Health, Dental, Vision, Short/Long Term Disability and Life Insurance available",
+      "Additional Information": ""
+    },
+    "Miscellaneous": {
+      "Trucks(Can you describe your fleet in brief )": "P1000 Trucks or bigger trucks",
+      "Additional Information(Please let us know if there is any other information that you would like to share.)": ""
+    },
+    "User Account": {
+      "Plan Subscribed To": "FedEx P\u0026D Full Service",
+      "Time Zone": "US/Eastern",
+      "Question Templates": ""
+    }
+  }
+}
+
+
