@@ -7,7 +7,7 @@ from jinja2 import Template
 import google.generativeai as genai
 from parsers.flow_parser import parse_flow
 from parsers.utils import extract_script
-
+from fastapi.middleware.cors import CORSMiddleware
 # Load Gemini API key from .env
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
@@ -17,12 +17,11 @@ app = FastAPI()
 # ✅ CORS Setup
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update to your frontend domain in prod
+    allow_origins=["*"],  # 🔓 Allows all domains — good for testing (NOT recommended for production)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # ✅ Helper: fallback for missing values
 def safe_get(value, default="Not provided"):
     if isinstance(value, str):
